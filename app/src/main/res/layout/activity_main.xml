@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:minHeight="48dp"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Flight information:" />
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Flight Number: AC834" />
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:minHeight="48dp"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Departure Information" />
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Airport : LTN" />
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Departure Time 18:15" />
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:minHeight="48dp"
+        app:cornerStyle="large"
+        app:elevationLevel="focused"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Arrival Information" />
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Airport : ZRH" />
+
+            <net.skyscanner.backpack.text.BpkText
+                style="@style/bpkTextHeading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Estimated Time of Arrival 20:35" />
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
